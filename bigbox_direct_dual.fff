@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<profile name="Dual 1.1" version="2016-03-10 13:58:53" app="S3D-Software 3.0.2">
-  <baseProfile>Generic Dual Extrusion Profile (modified)</baseProfile>
+<profile name="BigBox Direct Dual" version="2016-04-23 17:26:08" app="S3D-Software 3.0.2">
+  <baseProfile>Generic Dual Extrusion Profile</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders>Both Extruders</printExtruders>
@@ -12,9 +12,9 @@
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
-    <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0.25</retractionZLift>
-    <retractionSpeed>4200</retractionSpeed>
+    <extraRestartDistance>0.25</extraRestartDistance>
+    <retractionZLift>0</retractionZLift>
+    <retractionSpeed>3000</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
@@ -28,9 +28,9 @@
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
-    <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0.25</retractionZLift>
-    <retractionSpeed>4200</retractionSpeed>
+    <extraRestartDistance>0.25</extraRestartDistance>
+    <retractionZLift>0</retractionZLift>
+    <retractionSpeed>3000</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
@@ -42,37 +42,37 @@
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
-  <startPointOption>3</startPointOption>
+  <startPointOption>1</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
-  <startPointOriginZ>100</startPointOriginZ>
+  <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>95</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  <firstLayerHeightPercentage>75</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
   <raftOffset>3</raftOffset>
-  <raftSeparationDistance>0.1</raftSeparationDistance>
-  <raftInfill>90</raftInfill>
-  <disableRaftBaseLayers>1</disableRaftBaseLayers>
-  <useSkirt>1</useSkirt>
+  <raftSeparationDistance>0.14</raftSeparationDistance>
+  <raftInfill>85</raftInfill>
+  <disableRaftBaseLayers>0</disableRaftBaseLayers>
+  <useSkirt>0</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>1</skirtOutlines>
-  <skirtOffset>3</skirtOffset>
+  <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
-  <primePillarWidth>12</primePillarWidth>
+  <primePillarWidth>14</primePillarWidth>
   <primePillarLocation>7</primePillarLocation>
   <primePillarSpeedMultiplier>1</primePillarSpeedMultiplier>
   <useOozeShield>0</useOozeShield>
   <oozeShieldExtruder>999</oozeShieldExtruder>
   <oozeShieldOffset>2</oozeShieldOffset>
-  <oozeShieldOutlines>1</oozeShieldOutlines>
-  <oozeShieldSidewallShape>1</oozeShieldSidewallShape>
+  <oozeShieldOutlines>2</oozeShieldOutlines>
+  <oozeShieldSidewallShape>2</oozeShieldSidewallShape>
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
   <infillExtruder>1</infillExtruder>
@@ -87,18 +87,18 @@
   <overlapInfillAngles>1</overlapInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>1</supportExtruder>
-  <supportInfillPercentage>35</supportInfillPercentage>
-  <supportExtraInflation>0.5</supportExtraInflation>
-  <denseSupportLayers>3</denseSupportLayers>
-  <denseSupportInfillPercentage>75</denseSupportInfillPercentage>
+  <supportInfillPercentage>30</supportInfillPercentage>
+  <supportExtraInflation>0</supportExtraInflation>
+  <denseSupportLayers>0</denseSupportLayers>
+  <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
   <supportLayerInterval>1</supportLayerInterval>
-  <supportHorizontalPartOffset>0.15</supportHorizontalPartOffset>
-  <supportUpperSeparationLayers>0</supportUpperSeparationLayers>
-  <supportLowerSeparationLayers>0</supportLowerSeparationLayers>
+  <supportHorizontalPartOffset>0.3</supportHorizontalPartOffset>
+  <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+  <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportType>0</supportType>
-  <supportGridSpacing>1</supportGridSpacing>
-  <maxOverhangAngle>35</maxOverhangAngle>
-  <supportAngles>45,-45</supportAngles>
+  <supportGridSpacing>4</supportGridSpacing>
+  <maxOverhangAngle>45</maxOverhangAngle>
+  <supportAngles>0</supportAngles>
   <temperatureController name="Extruder 0 (L)">
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
@@ -127,13 +127,15 @@
     <setpoint layer="3" speed="30"/>
     <setpoint layer="4" speed="40"/>
     <setpoint layer="5" speed="50"/>
+    <setpoint layer="6" speed="60"/>
+    <setpoint layer="7" speed="70"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
   <minSpeedLayerTime>15</minSpeedLayerTime>
   <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
-  <increaseFanForCooling>0</increaseFanForCooling>
-  <minFanLayerTime>45</minFanLayerTime>
+  <increaseFanForCooling>1</increaseFanForCooling>
+  <minFanLayerTime>15</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
   <increaseFanForBridging>1</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
@@ -149,9 +151,9 @@
   <gcodeZoffset>0</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
-  <strokeXoverride>300</strokeXoverride>
+  <strokeXoverride>260</strokeXoverride>
   <strokeYoverride>200</strokeYoverride>
-  <strokeZoverride>260</strokeZoverride>
+  <strokeZoverride>280</strokeZoverride>
   <originOffsetXoverride>0</originOffsetXoverride>
   <originOffsetYoverride>0</originOffsetYoverride>
   <originOffsetZoverride>0</originOffsetZoverride>
@@ -168,24 +170,24 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>;BigBox Printer Start Script Begin,,;extruder offset - refer to the wiki | http://wiki.e3d-online.com/wiki/Printer_Commissioning#Dual_Nozzle_Alignment,M218 T1 X35 Y0,,M117 Print Starting.,,;BigBox Printer Start Script End</startingGcode>
+  <startingGcode>;BigBox Printer Start Script Begin,,;Homing,M117 Homing.,G28,,;Dock,G1 X70 Y200 F3000,G1 X70 Y240 F3000,,M117 Print Starting.,,;BigBox Printer Start Script End</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
-  <toolChangeGcode>;BigBox Oozeless Tool Change Script Begin,,;dock,{IF NEWTOOL=1}T0,{IF NEWTOOL=1}G1 X70 Y200 F3000,{IF NEWTOOL=1}G1 X70 Y240 F3000,,{IF NEWTOOL=0}T1,{IF NEWTOOL=0}G1 X105 Y200 F3000,{IF NEWTOOL=0}G1 X105 Y240 F3000,,;purge,{IF OLDTOOL=1}T1,{IF OLDTOOL=1}G1 E25 F400,{IF OLDTOOL=1}G1 E-14  F4000,{IF OLDTOOL=0}T0,{IF OLDTOOL=0}G1 E27 F400,{IF OLDTOOL=0}G1 E-14  F4000,,;extruder steps per mm,;{IF NEWTOOL=0}M92 E320 ;adjust steps per mm for your filament in extruder 0 (L) ,;{IF NEWTOOL=1}M92 E320 ;adjust steps per mm for your filament in extruder 1 (R),,;prime new extruder,{IF NEWTOOL=0}T0,{IF NEWTOOL=1}T1,G1 F200,G1 E15 F200,G1 F50,G1 E5 F50,G1 E-1.5 F3000,,;undock,{IF NEWTOOL=0}T0,{IF NEWTOOL=0}G1 X80 Y240 F3000,{IF NEWTOOL=0}G1 X80 Y200 F3000,{IF NEWTOOL=1}T1,{IF NEWTOOL=1}G1 X115 Y240 F3000,{IF NEWTOOL=1}G1 X115 Y200 F3000,,;BigBox Oozeless Tool Change Script End</toolChangeGcode>
+  <toolChangeGcode>;BigBox Oozeless Tool Change Script Begin,,;retract to move,G92 E0,G1 E-1.5 F100,G92 E0,,;dock,{IF OLDTOOL=1}G1 X105 Y200 F3000,{IF OLDTOOL=1}G1 X105 Y240 F3000,{IF OLDTOOL=0}G1 X70 Y200 F3000,{IF OLDTOOL=0}G1 X70 Y240 F3000,,;purge,{IF OLDTOOL=1}G92 E0,{IF OLDTOOL=1}G1 E25 F400,{IF OLDTOOL=1}G1 E-14  F6000,{IF OLDTOOL=1}G92 E0,{IF OLDTOOL=0}G92 E0,{IF OLDTOOL=0}G1 E25 F400,{IF OLDTOOL=0}G1 E-14  F6000,{IF OLDTOOL=0}G92 E0,,;extruder steps per mm,;{IF NEWTOOL=0}M92 E320 ;adjust steps per mm for your filament in extruder 0 (L) ,;{IF NEWTOOL=1}M92 E320 ;adjust steps per mm for your filament in extruder 1 (R),,;prime new extruder,{IF NEWTOOL=0}T0,{IF NEWTOOL=1}T1,G92 E0,G1 E20 F200,G1 E-1 F2000,G92 E0,,;undock,{IF NEWTOOL=1}G1 X115 Y240 F3000,{IF NEWTOOL=1}G1 X115 Y200 F3000,{IF NEWTOOL=0}G1 X80 Y240 F3000,{IF NEWTOOL=0}G1 X80 Y200 F3000,,;BigBox Oozeless Tool Change Script End</toolChangeGcode>
   <endingGcode>;BigBox Printer End Script Begin,,M117 Print Complete.,,;Dock,T0,G1 X70 Y200 F3000,G1 X70 Y240 F3000,,;Disable Systems,T1	;Select Extruder 1,M104 S0 	;Turn off Hotend,T0	;Select Extruder 0,M104 S0 	;Turn off Hotend,M140 S0	;Turn off Heated Bed,M84	;Disable Stepper Motors,M106 S0	;Stop Print Cooling Fan,,;BigBox Printer End Script End</endingGcode>
   <createX3G>0</createX3G>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <createMB5G>0</createMB5G>
-  <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer&quot;} ,{REPLACE &quot; Z = &quot; &quot; Z=&quot;}</postProcessing>
+  <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer&quot;} ,{REPLACE &quot;, Z = &quot; &quot; | Z=&quot;}</postProcessing>
   <defaultSpeed>3000</defaultSpeed>
-  <outlineUnderspeed>0.5</outlineUnderspeed>
+  <outlineUnderspeed>0.75</outlineUnderspeed>
   <solidInfillUnderspeed>0.75</solidInfillUnderspeed>
-  <supportUnderspeed>0.5</supportUnderspeed>
-  <rapidXYspeed>6000</rapidXYspeed>
-  <rapidZspeed>360</rapidZspeed>
-  <minBridgingArea>15</minBridgingArea>
-  <bridgingExtraInflation>0.5</bridgingExtraInflation>
+  <supportUnderspeed>0.75</supportUnderspeed>
+  <rapidXYspeed>4800</rapidXYspeed>
+  <rapidZspeed>180</rapidZspeed>
+  <minBridgingArea>50</minBridgingArea>
+  <bridgingExtraInflation>0.25</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
   <filamentDiameter>1.75</filamentDiameter>
@@ -207,9 +209,9 @@
   <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>0</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
-  <toolChangeRetractionDistance>2</toolChangeRetractionDistance>
-  <toolChangeExtraRestartDistance>0.5</toolChangeExtraRestartDistance>
-  <toolChangeRetractionSpeed>4200</toolChangeRetractionSpeed>
+  <toolChangeRetractionDistance>0</toolChangeRetractionDistance>
+  <toolChangeExtraRestartDistance>0.25</toolChangeExtraRestartDistance>
+  <toolChangeRetractionSpeed>3000</toolChangeRetractionSpeed>
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
@@ -222,9 +224,9 @@
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0.25</retractionZLift>
-      <retractionSpeed>4200</retractionSpeed>
+      <extraRestartDistance>0.25</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>3000</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
@@ -238,9 +240,9 @@
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0.25</retractionZLift>
-      <retractionSpeed>4200</retractionSpeed>
+      <extraRestartDistance>0.25</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>3000</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
@@ -250,6 +252,8 @@
       <setpoint layer="3" speed="30"/>
       <setpoint layer="4" speed="40"/>
       <setpoint layer="5" speed="50"/>
+      <setpoint layer="6" speed="60"/>
+      <setpoint layer="7" speed="70"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
@@ -488,7 +492,7 @@
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>25</infillPercentage>
-    <supportInfillPercentage>35</supportInfillPercentage>
+    <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
     <layerHeight>0.1</layerHeight>
@@ -528,9 +532,9 @@
     <skirtExtruder>0</skirtExtruder>
     <infillExtruder>1</infillExtruder>
     <supportExtruder>1</supportExtruder>
-    <useSkirt>1</useSkirt>
+    <useSkirt>0</useSkirt>
     <usePrimePillar>0</usePrimePillar>
     <useOozeShield>0</useOozeShield>
-    <startingGcode>;BigBox Printer Start Script Begin,,;extruder offset - refer to the wiki | http://wiki.e3d-online.com/wiki/Printer_Commissioning#Dual_Nozzle_Alignment,M218 T1 X35 Y0,,M117 Print Starting.,,;BigBox Printer Start Script End</startingGcode>
+    <startingGcode>;BigBox Printer Start Script Begin,,;Homing,M117 Homing.,G28,,;Dock,G1 X70 Y200 F3000,G1 X70 Y240 F3000,,M117 Print Starting.,,;BigBox Printer Start Script End</startingGcode>
   </autoConfigureExtruders>
 </profile>
