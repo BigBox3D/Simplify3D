@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Print Farm" version="2016-06-01 16:40:18" app="S3D-Software 3.0.2">
+<profile name="BigBox Print Farm" version="2016-06-01 16:40:18" app="S3D-Software 3.0.2">
   <baseProfile>Plywood</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>High</printQuality>
