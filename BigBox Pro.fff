@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Hybrid Pro" version="2016-04-27 17:58:44" app="S3D-Software 3.0.2">
+<profile name="BigBox Pro" version="2016-01-15 09:47:48" app="S3D-Software 3.0.2">
   <baseProfile>Plywood</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>High</printQuality>
@@ -32,8 +32,8 @@
   <startPointOriginZ>150</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>99</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerHeightPercentage>75</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Triangular</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>22</infillPercentage>
+  <infillPercentage>25</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
@@ -80,18 +80,32 @@
   <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
   <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportType>0</supportType>
-  <supportGridSpacing>3</supportGridSpacing>
-  <maxOverhangAngle>25</maxOverhangAngle>
+  <supportGridSpacing>5</supportGridSpacing>
+  <maxOverhangAngle>35</maxOverhangAngle>
   <supportAngles>0</supportAngles>
+  <temperatureController name="Extruder 0">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>0</isHeatedBed>
+    <relayBetweenLayers>0</relayBetweenLayers>
+    <relayBetweenLoops>0</relayBetweenLoops>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="210"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>1</isHeatedBed>
+    <relayBetweenLayers>0</relayBetweenLayers>
+    <relayBetweenLoops>0</relayBetweenLoops>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="60"/>
+  </temperatureController>
   <fanSpeed>
+    <setpoint layer="1" speed="0"/>
     <setpoint layer="3" speed="30"/>
     <setpoint layer="4" speed="40"/>
     <setpoint layer="5" speed="50"/>
     <setpoint layer="6" speed="60"/>
     <setpoint layer="7" speed="70"/>
-    <setpoint layer="8" speed="80"/>
-    <setpoint layer="9" speed="90"/>
-    <setpoint layer="10" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -133,21 +147,21 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>;BigBox Printer Start Script Begin,,M117 Print Starting.,,;Dock,G1 X95 Y200 F3000,G1 X95 Y235 F3000,,;Prime Extruder,T0 	;Select Extruder 0,G92 E0 	;Reset E,G1 E10 F200 	;Extruder 10mm,G92 E0 	;Reset E,,;Undock,G1 X105 Y235 F3000,G1 X105 Y200 F3000,,;BigBox Printer Start Script End,</startingGcode>
+  <startingGcode>;BigBox Printer Start Script Begin,,M117 Print Starting.,,;Dock,G1 X70 Y200 F3000,G1 X70 Y240 F3000,,;Prime Extruder,T0 	;Select Extruder 0,G92 E0 	;Reset E,G1 E10 F200 	;Extruder 10mm,G92 E0 	;Reset E,,;Undock,G1 X80 Y240 F3000,G1 X80 Y200 F3000,,;BigBox Printer Start Script End,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>;BigBox Printer End Script Begin,,M117 Print Complete.,,;Dock,G1 X95 Y200 F3000,G1 X95 Y235 F3000,,;Disable Systems,T0	;Select Extruder 0,M104 S0 	;Turn off Hotend,M140 S0	;Turn off Heated Bed,M84	;Disable Stepper Motors,M106 S0	;Stop Print Cooling Fan,,;BigBox Printer End Script Begin</endingGcode>
+  <endingGcode>;BigBox Printer End Script Begin,,M117 Print Complete.,,;Dock,G1 X70 Y200 F3000,G1 X70 Y240 F3000,,;Disable Systems,T0	;Select Extruder 0,M104 S0 	;Turn off Hotend,M140 S0	;Turn off Heated Bed,M84	;Disable Stepper Motors,M106 S0	;Stop Print Cooling Fan,,;BigBox Printer End Script Begin</endingGcode>
   <createX3G>0</createX3G>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <createMB5G>0</createMB5G>
   <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer&quot;} ,{REPLACE &quot;, Z = &quot; &quot; | Z=&quot;}</postProcessing>
-  <defaultSpeed>2400</defaultSpeed>
+  <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.75</solidInfillUnderspeed>
   <supportUnderspeed>0.75</supportUnderspeed>
-  <rapidXYspeed>4800</rapidXYspeed>
+  <rapidXYspeed>6000</rapidXYspeed>
   <rapidZspeed>180</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0.4</bridgingExtraInflation>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="BigBox Direct Dual" version="2016-04-23 17:26:08" app="S3D-Software 3.0.2">
+<profile name="BigBox Dual" version="2016-04-23 17:26:08" app="S3D-Software 3.0.2">
   <baseProfile>Generic Dual Extrusion Profile</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
